@@ -1,12 +1,29 @@
 const container_div = document.querySelector("#main-container");
+const size_input = document.querySelector("#size-input");
 
-for(let i = 0; i < 256; i++) {
-  let div = document.createElement("div");
-  div.classList.add("box");
+function init(){
+  console.log(size_input.value);
+  container_div.style.gridTemplate = `repeat(${size_input.value}, 1fr) / repeat(${size_input.value}, 1fr)`;
 
-  div.addEventListener("mouseenter", e => {
-    e.currentTarget.style.backgroundColor = "blue";
-  });
+  while(container_div.hasChildNodes()){
+    container_div.removeChild(container_div.firstChild);
+  }
 
-  container_div.appendChild(div);
+  for(let i = 0; i < Math.pow(size_input.value, 2); i++) {
+    let div = document.createElement("div");
+    div.classList.add("box");
+
+    div.addEventListener("mouseenter", e => {
+      e.currentTarget.classList.add("highlight");
+    });
+
+    container_div.appendChild(div);
+  }
 }
+
+// Reset Button clears board
+const reset_button = document.querySelector("#reset");
+
+reset_button.addEventListener("click", init);
+
+init();
