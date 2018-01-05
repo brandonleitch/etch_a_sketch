@@ -21,7 +21,42 @@
   border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.highlight {
-  background-color: blue;
-  /*border: none;*/
+.highlight-1 {
+  background-color: rgba(0,0,255,.1);
+}
+
+.highlight-2 {
+  background-color: rgba(0,0,255,.2);
+}
+
+.highlight-3 {
+  background-color: rgba(0,0,255,.3);
+}
+
+.highlight-4 {
+  background-color: rgba(0,0,255,.4);
+}
+
+.highlight-5 {
+  background-color: rgba(0,0,255,.5);
+}
+
+.highlight-6 {
+  background-color: rgba(0,0,255,.6);
+}
+
+.highlight-7 {
+  background-color: rgba(0,0,255,.7);
+}
+
+.highlight-8 {
+  background-color: rgba(0,0,255,.8);
+}
+
+.highlight-9 {
+  background-color: rgba(0,0,255,.9);
+}
+
+.highlight-10 {
+  background-color: rgba(0,0,255,1.0);
 }

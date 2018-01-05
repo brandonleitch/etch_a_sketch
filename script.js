@@ -11,13 +11,23 @@ function init(){
 
   for(let i = 0; i < Math.pow(size_input.value, 2); i++) {
     let div = document.createElement("div");
+    div.opacity = 0;
     div.classList.add("box");
 
-    div.addEventListener("mouseenter", e => {
-      e.currentTarget.classList.add("highlight");
-    });
+    div.addEventListener("mouseenter", update);
 
     container_div.appendChild(div);
+  }
+}
+
+function update(e) {
+  let target = e.currentTarget;
+
+  target.opacity += 1;
+  target.classList.add(`highlight-${target.opacity}`);
+
+  if(target.opacity == 10){
+    target.removeEventListener("mouseenter", update);
   }
 }
 
