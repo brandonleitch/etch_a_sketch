@@ -2,7 +2,6 @@ const container_div = document.querySelector("#main-container");
 const size_input = document.querySelector("#size-input");
 
 function init(){
-  console.log(size_input.value);
   container_div.style.gridTemplate = `repeat(${size_input.value}, 1fr) / repeat(${size_input.value}, 1fr)`;
 
   while(container_div.hasChildNodes()){

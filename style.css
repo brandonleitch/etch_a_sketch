@@ -5,58 +5,79 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FFEEDD;
+}
+
+.form-element {
+  border: 2px solid rgba(200,200,200,.4);
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+button.form-element {
+  background-color: white;
+}
+
+button:target{
+  highlight: none;
+}
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+}
+
 #main-container {
   display: grid;
   grid-template: repeat(16, 1fr) / repeat(16, 1fr);
   width: 600px;
   height: 600px;
-
-  margin: auto;
-
-  border: 1px solid black;
-  border-radius: 3px;
+  background-color: white;
 }
 
 .box {
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, .01);
 }
 
 .highlight-1 {
-  background-color: rgba(0,0,255,.1);
+  background-color: rgba(130,115,255,.1);
 }
 
 .highlight-2 {
-  background-color: rgba(0,0,255,.2);
+  background-color: rgba(130,115,255,.2);
 }
 
 .highlight-3 {
-  background-color: rgba(0,0,255,.3);
+  background-color: rgba(130,115,255,.3);
 }
 
 .highlight-4 {
-  background-color: rgba(0,0,255,.4);
+  background-color: rgba(130,115,255,.4);
 }
 
 .highlight-5 {
-  background-color: rgba(0,0,255,.5);
+  background-color: rgba(130,115,255,.5);
 }
 
 .highlight-6 {
-  background-color: rgba(0,0,255,.6);
+  background-color: rgba(130,115,255,.6);
 }
 
 .highlight-7 {
-  background-color: rgba(0,0,255,.7);
+  background-color: rgba(130,115,255,.7);
 }
 
 .highlight-8 {
-  background-color: rgba(0,0,255,.8);
+  background-color: rgba(130,115,255,.8);
 }
 
 .highlight-9 {
-  background-color: rgba(0,0,255,.9);
+  background-color: rgba(130,115,255,.9);
 }
 
 .highlight-10 {
-  background-color: rgba(0,0,255,1.0);
+  background-color: rgba(130,115,255,1.0);
 }
