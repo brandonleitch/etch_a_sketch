@@ -14,6 +14,11 @@ function init(){
     div.classList.add("box");
 
     div.addEventListener("mouseenter", update);
+    div.addEventListener("click", e => {
+      let target = e.currentTarget;
+      target.opacity = 10;
+      target.classList.add(`highlight-${target.opacity}`);
+    });
 
     container_div.appendChild(div);
   }
